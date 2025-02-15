@@ -1,0 +1,17 @@
+datetime
+duckdb
+faker
+fastapi
+httpx
+markdown
+numpy
+pillow
+prettier
+python-dateutil
+python-dotenv
+requests
+scikit-learn
+uvicorn
+openai
+flask
+pandas
