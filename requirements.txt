@@ -13,5 +13,4 @@ requests
 scikit-learn
 uvicorn
 openai
-flask
 pandas
