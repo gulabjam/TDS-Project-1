@@ -845,7 +845,7 @@ async def run_task(task: str = Query(..., description="The task description")):
         input_file = classification.get("input_file", "")
         output_file = classification.get("output_file", "")
         parameters = classification.get("parameters", {})
-        arguments = classification["arguments"]
+        #arguments = classification["arguments"]
 
         # Execute the appropriate function
         if function_name == "do_a1":
@@ -871,18 +871,18 @@ async def run_task(task: str = Query(..., description="The task description")):
             do_a9(input_file, output_file, parameters.get("num_similar_texts", 2))
         elif function_name == "do_a10":
             do_a10(input_file, output_file, parameters.get("query", ""))
-        elif function_name == "B12":
-            B12(**json.loads(arguments))
-        elif function_name == "B3":
-            B3(**json.loads(arguments))
-        elif function_name == "B5":
-            B5(**json.loads(arguments))
-        elif function_name == "B6":
-            B6(**json.loads(arguments))
-        elif function_name == "B7":
-            B7(**json.loads(arguments))
-        elif function_name == "B9":
-            B9(**json.loads(arguments))
+        #elif function_name == "B12":
+        #    B12(**json.loads(arguments))
+        #elif function_name == "B3":
+        #    B3(**json.loads(arguments))
+        #elif function_name == "B5":
+        #    B5(**json.loads(arguments))
+        #elif function_name == "B6":
+        #    B6(**json.loads(arguments))
+        #elif function_name == "B7":
+        #    B7(**json.loads(arguments))
+        #elif function_name == "B9":
+        #    B9(**json.loads(arguments))
 
         elif function_name == "do_task":
             do_task(parameters.get("prompt", ""))
